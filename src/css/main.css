@@ -1,0 +1,20 @@
+body {
+    background-color: #eee;
+}
+
+.tools {
+    width: 360px;
+    padding: 12px;
+    background-color: #666;
+
+}
+
+.tools label {
+    color: #fff;
+}
+
+.tools p {
+    padding: 6px;
+    background-color: #fff;
+    color: #666;
+}

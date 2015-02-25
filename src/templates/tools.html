@@ -1,0 +1,17 @@
+<div class="tools">
+    <label>Position Array</label>
+    <textarea ng-model="digits" rows="10" cols="20"></textarea>
+    <label>Element Name</label>
+    <input type="text" ng-model="elementName"></input>
+    <label>Document Width</label>
+    <input type="text" ng-model="docWidth"></input>
+    <label>Document Height</label>
+    <input type="text" ng-model="docHeight"></input>
+    <label>Animation Time</label>
+    <input type="text" ng-model="animTime"></input>
+    <select ng-model="selectedEase">
+        <option ng-repeat="ease in easing" value="{{ease}}">{{ease}}</option>
+    </select>
+
+    <p>{{ output }}</p>
+</div>

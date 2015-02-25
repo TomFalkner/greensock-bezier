@@ -7,55 +7,22 @@
     <script src="../bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <script src="../bower_components/angular/angular.js" type="text/javascript"></script>
 
-    <style type="text/css">
-    
-        body {
-            background-color: #eee;
-        }
-
-        .tools {
-            width: 360px;
-            padding: 12px;
-            background-color: #666;
-
-        }
-
-        .tools label {
-            color: #fff;
-        }
-
-        .tools p {
-            padding: 6px;
-            background-color: #fff;
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body ng-app="bezierConverter">
     <div ng-controller="MainCtrl">
 
 
-        <div class="tools">
-            <label>Position Array</label>
-            <textarea ng-model="digits" rows="10" cols="20"></textarea>
-            <label>Element Name</label>
-            <input type="text" ng-model="elementName"></input>
-            <label>Document Width</label>
-            <input type="text" ng-model="docWidth"></input>
-            <label>Document Height</label>
-            <input type="text" ng-model="docHeight"></input>
-            <label>Animation Time</label>
-            <input type="text" ng-model="animTime"></input>
-            <select ng-model="selectedEase">
-                <option ng-repeat="ease in easing" value="{{ease}}">{{ease}}</option>
-            </select>
-
-            <p>{{ output }}</p>
-        </div>
+        <div tools element-name="" doc-width="" doc-height="" anim-time=""></div>
     </div>
     
     <script src="js/app.js" type="text/javascript"></script>
-    <script src="js/main-ctrl.js" type="text/javascript"></script>
+    <script src="js/controllers/main-ctrl.js" type="text/javascript"></script>
+
+    <script src="js/services/available-easing.js"></script>
+    <script src="js/services/tween-maker.js"></script>
+
+    <script src="js/directives/tools.js"></script>
 </body>
 </html>

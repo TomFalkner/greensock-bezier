@@ -4,7 +4,6 @@
 
     angular.module('bezierConverter')
         .controller('MainCtrl', ['$scope', function($scope) {
-            $scope.works = 'yep';
             $scope.digits = '';
             $scope.output = '';
             $scope.docWidth = 1100;
@@ -113,57 +112,5 @@
                 return ']}, ease:' + ease + '});'
             }
 
-            /*
-            TweenMax.to(YOUR_ELEMENT, 5, {bezier:{curviness:2, type:"thru", values:[{x:14, y:1000},{x:550, y:753},{x:801, y:687},{x:868, y:834},{x:674, y:925},{x:684, y:773}]}, ease:Linear.easeNone});
-           */
-
-          /*
-           514,1000,550,753,801,687,868,834,674,925,684,773
-           */
-
-            $scope.easing = [
-                'Power0.easeIn',
-                'Power0.easeInOut',
-                'Power0.easeOut',
-                'Power1.easeIn',
-                'Power1.easeInOut',
-                'Power1.easeOut',
-                'Power2.easeIn',
-                'Power2.easeInOut',
-                'Power2.easeOut',
-                'Power3.easeIn',
-                'Power3.easeInOut',
-                'Power3.easeOut',
-                'Power4.easeIn',
-                'Power4.easeInOut',
-                'Power4.easeOut',
-                'Back.easeIn',
-                'Back.easeInOut',
-                'Back.easeOut',
-                'Elastic.easeIn',
-                'Elastic.easeInOut',
-                'Elastic.easeOut',
-                'Bounce.easeIn',
-                'Bounce.easeInOut',
-                'Bounce.easeOut',
-                'Rough.easeIn',
-                'Rough.easeInOut',
-                'Rough.easeOut',
-                'SlowMo.easeIn',
-                'SlowMo.easeInOut',
-                'SlowMo.easeOut',
-                'Stepped.easeIn',
-                'Stepped.easeInOut',
-                'Stepped.easeOut',
-                'Circ.easeIn',
-                'Circ.easeInOut',
-                'Circ.easeOut',
-                'Expo.easeIn',
-                'Expo.easeInOut',
-                'Expo.easeOut',
-                'Sine.easeIn',
-                'Sine.easeInOut',
-                'Sine.easeOut',
-            ];
         }]);
 })();
